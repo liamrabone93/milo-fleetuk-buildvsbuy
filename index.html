@@ -110,9 +110,9 @@ footer a{color:var(--hi);text-decoration:none}
       <div class="fleetmark"><span class="a">FLEET</span><span class="b">UK</span></div>
     </div>
 
-    <h1><span class="thin">The honest comparison</span>Build in-house, <span class="ac">or run Milo.</span></h1>
+    <h1><span class="thin">The comparison, and the recommendation</span>Build in-house, <span class="ac">or run Milo.</span></h1>
 
-    <p class="hero-note">You were straight with me on Friday, so here is the same back. You want complete control of your own data, you want to own your own IP, and you would rather have someone in-house build something bespoke to a business you called a Frankenstein. That is a legitimate position and this page does not try to argue you out of it. <b>It puts the two routes side by side, the same way we did with Metabase, including the rows where building it yourselves wins.</b></p>
+    <p class="hero-note">You were straight with me on Friday, so here is the same back. You want complete control of your own data, you want to own your own IP, and you would rather have someone in-house build something bespoke to a business you called a Frankenstein. Those are fair reasons and this page gives them a fair hearing, including the rows where building it yourselves wins. <b>It also reaches a conclusion, which is that Milo is the right call for Fleet UK, and it shows the working rather than asking you to take it on trust.</b></p>
   </div>
 </section>
 
@@ -122,7 +122,7 @@ footer a{color:var(--hi);text-decoration:none}
   <div class="wrap">
     <div class="kicker">The two routes</div>
     <h2>Hire and build, <span class="lt">against Milo.</span></h2>
-    <p class="lede">Thirteen dimensions that decide this either way. Three of them go to the in-house route, and they happen to be the three you raised.</p>
+    <p class="lede">Fifteen dimensions that decide this either way. Twelve go to Milo. Three go to the in-house route, and those three are the ones you raised, so they get answered properly below rather than waved away.</p>
 
     <div class="cmp">
       <table class="ct">
@@ -146,6 +146,11 @@ footer a{color:var(--hi);text-decoration:none}
             <td class="m"><span class="yes">✓</span> Built already. The only work left is the part that is genuinely yours: your definitions, your rules, your questions.</td>
           </tr>
           <tr>
+            <td class="f">Live data, or manual exports</td>
+            <td>Live connections into six systems are the expensive part of this build, so they are usually the first thing scoped out. Bespoke projects at this size routinely end up asking somebody to drop the week's data files in by hand.</td>
+            <td class="m"><span class="yes">✓</span> Live connections to Navigator, RingOver, Sage HR, Sheets, Salesforce and Mailchimp. Nobody drops a file in anywhere.</td>
+          </tr>
+          <tr>
             <td class="f">The Navigator API</td>
             <td>Open, as you said, but built out of Lego and patched badly. That is your new hire's first task, with no prior exposure to it and nothing to benchmark it against.</td>
             <td class="m"><span class="yes">✓</span> Philip and Rakshev have looked at it and are not worried. The team has spent two and a bit years doing nothing but these integrations, 700+ of them. We build that connector at our cost, in week one.</td>
@@ -162,18 +167,23 @@ footer a{color:var(--hi);text-decoration:none}
           </tr>
           <tr>
             <td class="f">Cost, year one</td>
-            <td>Salary, employer NI, pension and recruitment fee for a mid-level AI engineer, plus model spend, hosting and tooling.<span class="est">UK market estimate, roughly £90k to £110k fully loaded. Worth checking against your own recruitment numbers.</span></td>
-            <td class="m"><span class="yes">✓</span> £18,000 a year. Unlimited users across Fleet UK and WavMob, never per seat.</td>
+            <td>Salary, employer NI, pension and recruitment for a mid-level AI engineer, plus hosting and LLM spend on top. Worth knowing that outside teams quote tens of thousands for the build alone, and a wage buys none of that outright.<span class="est">Salary roughly £90k to £110k fully loaded on UK market rates. Worth checking against your own recruitment numbers.</span></td>
+            <td class="m"><span class="yes">✓</span> £18,000 a year, all in. Unlimited users across Fleet UK and WavMob, never per seat.</td>
           </tr>
           <tr>
             <td class="f">Cost, year three</td>
-            <td>The salary does not stop, and neither does the infrastructure. You are three years in on a product one person has maintained.</td>
-            <td class="m"><span class="yes">✓</span> The same subscription, on a product three years further on than the day you bought it.</td>
+            <td>The salary does not stop, and neither does the hosting and LLM spend underneath it. On the outsourced version of this, maintenance is billed ad hoc every time an API breaks or a format changes. You are three years in on a product one person has maintained.</td>
+            <td class="m"><span class="yes">✓</span> The same subscription, maintenance included, on a product three years further on than the day you bought it.</td>
           </tr>
           <tr>
             <td class="f">Bespoke to Fleet UK</td>
             <td>Bespoke code, written once, by one person, against a specification nobody has written yet.</td>
             <td class="m"><span class="yes">✓</span> Bespoke configuration. Your DPF and converter definitions, your prep-centre rules, your vulnerable-customer flags. Changed in an afternoon rather than a sprint.</td>
+          </tr>
+          <tr>
+            <td class="f">Security and GDPR</td>
+            <td>Yours to build, evidence and maintain, and on bespoke builds it is routinely the thing nobody budgets for. For an FCA-regulated business handling vulnerable customers, that is not a detail you can inherit later.</td>
+            <td class="m"><span class="yes">✓</span> ISO 27001 and SOC 2, AWS Frankfurt, GDPR compliant, independently pen-tested. Audited already, rather than sitting on a roadmap.</td>
           </tr>
           <tr>
             <td class="f">Who owns the data</td>
@@ -200,9 +210,9 @@ footer a{color:var(--hi);text-decoration:none}
     </div>
 
     <div class="fair">
-      <h3>Where building in-house genuinely wins</h3>
-      <p>Total control of the roadmap, an asset that sits on your own balance sheet, no vendor in the middle, and data that never leaves your estate. If the strategic goal is to own an AI capability rather than to answer questions about DPF failures, that is a real argument and no comparison table beats it.</p>
-      <p>Two things are worth weighing against it. The first is that unless you self-host a model, which is a far bigger project than the one being discussed, a bespoke build still sends your data to a third-party model API, so you take on the security posture and the audit trail yourselves rather than removing them. The second is that the IP worth owning here is probably not the plumbing. Nobody gains an advantage from owning a Navigator connector. The advantage is in knowing which questions matter and how Fleet UK defines the answers, and that stays yours on either route.</p>
+      <h3>The three rows that go the other way, answered</h3>
+      <p>Building in-house gives you total control of the roadmap, an asset on your own balance sheet, and data that never leaves your estate. If the strategic goal is to own an AI capability in its own right, that is a real argument and no table beats it. It is just a different goal from the one you described on the call, which was answering questions about DPF failures and converter issues.</p>
+      <p>On data, unless you self-host a model, which is a far bigger project than the one being discussed, a bespoke build still sends your data to a third-party model API. You would be taking on the security posture, the retention policy and the audit trail yourselves rather than removing them. On IP, the part worth owning is not the plumbing. Nobody gains an advantage from owning a Navigator connector. The advantage is in knowing which questions matter and how Fleet UK defines the answers, and that stays yours either way. On roadmap control, a single mid-level hire with a five-system backlog is not a roadmap you control, it is a queue you own.</p>
     </div>
   </div>
 </section>
@@ -212,9 +222,10 @@ footer a{color:var(--hi);text-decoration:none}
   <div class="tex noise"></div>
   <div class="tex grid-dark"></div>
   <div class="wrap">
-    <div class="kicker">The one line</div>
-    <h2>The two are not <span class="ac">mutually exclusive.</span></h2>
-    <p class="lede">You said running the trial while planning to hire would feel disingenuous. I would argue the opposite. Recruitment takes months either way, and six weeks of this tells you which questions the business actually asks, where the data quality falls over, and what good looks like. On the route where you build, that is a written specification you hand your new hire on day one instead of asking them to work it out blind. It is the most useful thing you could do for a build you have not started yet.</p>
+    <div class="kicker">The recommendation</div>
+    <h2>Run Milo. <span class="ac">Then hire, if you still want to.</span></h2>
+    <p class="lede">Twelve of fifteen rows, and the three that go the other way are answered above. On cost it is £18,000 a year against a salary plus a build plus the running costs underneath it. On time it is a fortnight against the better part of a year. On risk you find out in six weeks rather than after a wage bill. For a business that is FCA regulated and looking after vulnerable customers, arriving with ISO 27001 and SOC 2 already audited rather than on a roadmap is not a small thing either.</p>
+    <p class="lede" style="margin-top:20px">You said trialling this while planning to hire would feel disingenuous. I would argue the opposite. Recruitment takes months regardless, nothing about running Milo slows it down, and six weeks tells you which questions the business actually asks and where the data quality falls over. If you do go on to hire, you hand that to them on day one as a written specification instead of asking them to work it out blind. So the recommendation is Milo, and it costs you nothing you were not already spending to find out whether we are right.</p>
     <a class="btn" href="mailto:liam@milo.ai?subject=Fleet%20UK%20and%20Milo">Pick it back up</a>
   </div>
 </section>
